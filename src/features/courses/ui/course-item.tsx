@@ -11,18 +11,21 @@ import {
   CardTitle,
 } from "@/shared/ui/card";
 import { useTransition } from "react";
+import { deleteCourse } from "../api/actions/delete-course";
 
 type CourseProps = {
   course: ICourse;
-  onDelete: () => Promise<void>;
+  // onDelete: () => Promise<void>;
 };
 
-export const CourseItem = ({ course, onDelete }: CourseProps) => {
+export const CourseItem = ({ course }: CourseProps) => {
   const [isPending, startTransition] = useTransition();
 
   const handleDelete = () => {
     startTransition(async () => {
-      await onDelete();
+      // await onDelete();
+      const res = await deleteCourse(course.id);
+      console.log(res);
     });
   };
   return (

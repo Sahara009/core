@@ -5,8 +5,8 @@ export default async function Home() {
   return (
     <div className="">
       hello next
-      {/* <Courses /> */}
       <CourseCreateForm />
+      <Courses />
     </div>
   );
 }
