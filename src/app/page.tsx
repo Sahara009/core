@@ -1,7 +1,12 @@
+import { Courses } from "@/features/courses/pub/courses";
+import { CourseCreateForm } from "@/features/courses/pub/create-course-form";
+
 export default async function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+    <div className="">
       hello next
+      {/* <Courses /> */}
+      <CourseCreateForm />
     </div>
   );
 }

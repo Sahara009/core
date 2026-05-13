@@ -2,7 +2,7 @@ import { deleteCourse } from "../api/actions/delete-course";
 import coursesRepository from "../courses.repository";
 import { CourseItem } from "../ui/course-item";
 
-export const courses = async () => {
+export const Courses = async () => {
   const courses = await coursesRepository.getCourses();
 
   return (
