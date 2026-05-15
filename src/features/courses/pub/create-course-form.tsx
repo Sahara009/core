@@ -48,7 +48,7 @@ export const CourseCreateForm = () => {
         <FieldSet className="w-full max-w-xs">
           <FieldGroup>
             <Field>
-              <FieldLabel htmlFor="name">name</FieldLabel>
+              <FieldLabel htmlFor="name">Name</FieldLabel>
 
               <Input
                 id="name"

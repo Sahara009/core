@@ -21,12 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={cn(
-          "min-h-screen bg-background font-sans antialiased flex flex-col",
-          fostSans.variable,
-        )}
-      >
+      <body className={cn(" bg-background font-sans ", fostSans.variable)}>
         {children}
       </body>
     </html>

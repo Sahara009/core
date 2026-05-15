@@ -15,7 +15,6 @@ import { deleteCourse } from "../api/actions/delete-course";
 
 type CourseProps = {
   course: ICourse;
-  // onDelete: () => Promise<void>;
 };
 
 export const CourseItem = ({ course }: CourseProps) => {
@@ -23,13 +22,12 @@ export const CourseItem = ({ course }: CourseProps) => {
 
   const handleDelete = () => {
     startTransition(async () => {
-      // await onDelete();
       const res = await deleteCourse(course.id);
       console.log(res);
     });
   };
   return (
-    <Card>
+    <Card className="w-full max-w-xs mt-7">
       <CardHeader>
         <CardTitle>Card Title: {course.name}</CardTitle>
         <CardDescription>
