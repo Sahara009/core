@@ -6,6 +6,7 @@ export const Courses = async () => {
 
   return (
     <div>
+      <h1>Courses Page</h1>
       {courses.map((course) => (
         <div key={course.id}>
           <CourseItem course={course} />
